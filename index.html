@@ -12,6 +12,8 @@
       background: linear-gradient(135deg, #074fca, #dbe9f4);
       color: #333;
       perspective: 1000px;
+      transform-style: preserve-3d;
+      will-change: transform;
     }
 
     .container {
@@ -24,10 +26,16 @@
       transform-style: preserve-3d;
       transition: transform 0.5s ease;
       box-shadow: 0 70px 140px rgba(0,0,0,0.2);
+      will-change: transform;
     }
 
     .container:hover {
       transform: rotateY(1deg) rotateX(1deg);
+    }
+
+    .left-column, .right-column {
+      transform: translateZ(0);
+      backface-visibility: hidden;
     }
 
     .left-column {
@@ -239,23 +247,4 @@
 
     <h2>📁 Proyectos Relevantes</h2>
     <ul>
-      <li><strong>Desarrollo Web – Empresa Familiar:</strong> Página web creada en Visual Studio Code</li>
-      <li><strong>Bot de WhatsApp – Ikosoft:</strong> Recordatorios automáticos de citas</li>
-      <li>Integración con SQL y servidor en <strong>GoDaddy</strong></li>
-    </ul>
-
-    <h2>🎓 Educación</h2>
-    <ul>
-      <li><strong>Grado Medio en Sistemas Microinformáticos y Redes</strong> (Presencial, 2020–2022) – Media: <strong>8,7</strong></li>
-      <li><strong>Curso de Hostelería y Turismo</strong> – Audiolís (Online, 2014)</li>
-      <li><strong>Educación Secundaria Obligatoria (ESO)</strong></li>
-    </ul>
-  </div>
-</div>
-
-<footer>
-  &copy; 2025 Víctor Revilla Ramírez – CV Web Personal
-</footer>
-
-</body>
-</html>
+      <li><strong>Desarrollo Web – Empresa
