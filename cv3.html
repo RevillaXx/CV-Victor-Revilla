@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Víctor Revilla Ramírez</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #074fca, #dbe9f4);
+      color: #333;
+      perspective: 1000px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 2rem auto;
+      background-color: #ffffff;
+      border-radius: 35px #070707 ;
+      overflow: hidden;
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease;
+      box-shadow: 0 70px 140px rgba(0,0,0,0.2);
+    }
+
+    .container:hover {
+      transform: rotateY(1deg) rotateX(1deg);
+    }
+
+    .left-column {
+      width: 30%;
+      background: linear-gradient(135deg, #005577, #007799);
+      color: white;
+      padding: 2rem;
+      box-sizing: border-box;
+      box-shadow: inset -5px 0 10px rgba(0,0,0,0.2);
+      transform: translateZ(20px);
+    }
+
+    .right-column {
+      width: 70%;
+      padding: 2rem;
+      box-sizing: border-box;
+      background-color: #f3fbfd;
+      transform: translateZ(10px);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #011f2e;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.4rem;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+
+    p, li {
+      line-height: 1.5;
+    }
+
+    p strong, li strong {
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .skill-bar {
+      margin-bottom: 1rem;
+      transform: translateZ(5px);
+    }
+
+    .skill-name {
+      font-weight: bold;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .bar {
+      height: 12px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: #ffffff;
+      opacity: 0.8;
+      transition: width 0.3s ease;
+    }
+
+    .experience-block {
+      background: #ffffff;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-block:hover {
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        transform: none !important;
+      }
+      .left-column, .right-column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-column">
+    <h1>Víctor Revilla Ramírez</h1>
+    <p><strong>Líder de Técnicos en Software de Gestión de Bases de Datos</strong></p>
+
+    <h2>📫 Contacto</h2>
+    <p><strong>Ubicación:</strong> Getafe, Madrid</p>
+    <p><strong>Email:</strong> victor.revilla2020@gmail.com</p>
+
+    <h2>🛠️ Habilidades</h2>
+    <div class="skill-bar"><div class="skill-name">Soporte técnico y reparación</div><div class="bar"><div class="bar-fill" style="width: 85%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">Gestión de equipos</div><div class="bar"><div class="bar-fill" style="width: 85%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">Atención al cliente</div><div class="bar"><div class="bar-fill" style="width: 90%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">SQL</div><div class="bar"><div class="bar-fill" style="width: 90%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">Desarrollo web</div><div class="bar"><div class="bar-fill" style="width: 80%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">Automatización con bots y APIs</div><div class="bar"><div class="bar-fill" style="width: 75%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">HTML</div><div class="bar"><div class="bar-fill" style="width: 90%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">CSS</div><div class="bar"><div class="bar-fill" style="width: 80%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">Administración de redes informáticas</div><div class="bar"><div class="bar-fill" style="width: 80%"></div></div></div>
+    <div class="skill-bar"><div class="skill-name">Excel</div><div class="bar"><div class="bar-fill" style="width: 75%"></div></div></div>
+
+    <h2>🌍 Idiomas</h2>
+    <p><strong>Español:</strong> Nativo</p>
+    <p><strong>Inglés:</strong> Intermedio</p>
+
+    <h2>🚘 Carnet de Conducir</h2>
+    <p>Carnet de conducir y vehículo propio</p>
+
+    <h2>🎯 Actividades</h2>
+    <ul>
+      <li>Publicidad activa en <strong>Milanuncios</strong></li>
+      <li>Diagnóstico y reparación de ordenadores</li>
+      <li>Diagnóstico y reparación de impresoras</li>
+      <li>Mantenimiento y configuración de redes domésticas</li>
+    </ul>
+  </div>
+
+  <div class="right-column">
+    <h2>👨‍💻 Sobre Mí</h2>
+    <p>Profesional con experiencia en atención al cliente, logística, hostelería y, en los últimos años, especialización en informática, <strong>gestión de bases de datos SQL</strong> y <strong>desarrollo de soluciones tecnológicas</strong>. Apasionado por la tecnología, emprendedor y con capacidad de adaptarse a nuevos entornos con soluciones prácticas y efectivas.</p>
+
+    <h2>💼 Experiencia Laboral</h2>
+
+    <div class="experience-block">
+      <p><strong>IKOSOFT (Sucursal Española de Empresa Francesa)</strong><br><strong>Líder de Técnicos</strong> – Madrid (ene. 2024 - Actualidad)</p>
+      <ul>
+        <li>Coordinación de un equipo técnico</li>
+        <li>Optimización de consultas y procesos SQL</li>
+        <li>Comunicación con clientes como Provalliance</li>
+        <li>Resolución de incidencias vía Teams</li>
+      </ul>
+    </div>
+
+    <div class="experience-block">
+      <p><strong>IKOSOFT</strong><br><strong>Técnico Informático</strong> (may. 2022 - dic. 2023)</p>
+      <ul>
+        <li>Soporte técnico y desarrollo en SQL</li>
+        <li>Mejora del rendimiento del sistema</li>
+        <li>Colaboración con Francia vía Microsoft Teams</li>
+      </ul>
+    </div>
+
+    <div class="experience-block">
+      <p><strong>Amazon</strong><br><strong>Encargado de Rutas</strong> (2019 - 2021)</p>
+      <ul>
+        <li>Planificación y control de rutas</li>
+        <li>Coordinación de repartidores</li>
+      </ul>
+    </div>
+
+    <div class="experience-block">
+      <p><strong>Amazon</strong><br><strong>Repartidor</strong> (2018 - 2019)</p>
+      <ul>
+        <li>Entrega de pedidos</li>
+        <li>Trato profesional con cliente final</li>
+      </ul>
+    </div>
+
+    <div class="experience-block">
+      <p><strong>Restaurante Cratera</strong><br><strong>Camarero</strong> (2014 - 2021)</p>
+      <ul>
+        <li>Servicio en sala y caja</li>
+        <li>Gestión en temporadas altas</li>
+      </ul>
+    </div>
+
+    <div class="experience-block">
+      <p><strong>Supermercado DIA</strong><br><strong>Dependiente</strong> (2012 - 2014)</p>
+      <ul>
+        <li>Reposición, caja y atención al cliente</li>
+      </ul>
+    </div>
+
+    <div class="experience-block">
+      <p><strong>Autónomo en Construcción</strong><br><strong>Trabajador de Obra</strong> (2009 - 2012)</p>
+      <ul>
+        <li>Instalación de escayola y techos</li>
+        <li>Reformas y obra nueva</li>
+      </ul>
+    </div>
+
+    <h2>📁 Proyectos Relevantes</h2>
+    <ul>
+      <li><strong>Desarrollo Web – Empresa Familiar:</strong> Página web creada en Visual Studio Code</li>
+      <li><strong>Bot de WhatsApp – Ikosoft:</strong> Recordatorios automáticos de citas</li>
+      <li>Integración con SQL y servidor en <strong>GoDaddy</strong></li>
+    </ul>
+
+    <h2>🎓 Educación</h2>
+    <ul>
+      <li><strong>Grado Medio en Sistemas Microinformáticos y Redes</strong> (Presencial, 2020–2022) – Media: <strong>8,7</strong></li>
+      <li><strong>Curso de Hostelería y Turismo</strong> – Audiolís (Online, 2014)</li>
+      <li><strong>Educación Secundaria Obligatoria (ESO)</strong></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Víctor Revilla Ramírez – CV Web Personal
+</footer>
+
+</body>
+</html>
