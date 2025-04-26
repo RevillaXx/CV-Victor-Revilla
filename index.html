@@ -12,8 +12,6 @@
       background: linear-gradient(135deg, #074fca, #dbe9f4);
       color: #333;
       perspective: 1000px;
-      transform-style: flat; /* Cambio a flat para evitar renderizado 3D innecesario */
-      will-change: transform;
     }
 
     .container {
@@ -21,21 +19,20 @@
       max-width: 1200px;
       margin: 2rem auto;
       background-color: #ffffff;
-      border-radius: 35px #070707 ;
+      border-radius: 35px #070707;
       overflow: hidden;
+      box-shadow: 0 70px 140px rgba(0,0,0,0.2);
       transform-style: preserve-3d;
       transition: transform 0.5s ease;
-      box-shadow: 0 70px 140px rgba(0,0,0,0.2);
-      will-change: transform;
     }
 
     .container:hover {
-      transform: rotateY(1deg) rotateX(1deg);
+      transform: rotateY(2deg) rotateX(2deg); /* Cambié a rotación más suave */
     }
 
     .left-column, .right-column {
-      transform: translate3d(0, 0, 0); /* Usar translate3d para mejorar el rendimiento */
       backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     .left-column {
@@ -44,8 +41,6 @@
       color: white;
       padding: 2rem;
       box-sizing: border-box;
-      box-shadow: inset -5px 0 10px rgba(0,0,0,0.2);
-      transform: translate3d(20px, 0, 0); /* Usar translate3d para una mejor calidad */
     }
 
     .right-column {
@@ -53,7 +48,6 @@
       padding: 2rem;
       box-sizing: border-box;
       background-color: #f3fbfd;
-      transform: translate3d(10px, 0, 0);
     }
 
     h1 {
@@ -86,7 +80,6 @@
 
     .skill-bar {
       margin-bottom: 1rem;
-      transform: translate3d(0, 0, 0);
     }
 
     .skill-name {
@@ -134,7 +127,6 @@
     @media screen and (max-width: 768px) {
       .container {
         flex-direction: column;
-        transform: none !important;
       }
       .left-column, .right-column {
         width: 100%;
