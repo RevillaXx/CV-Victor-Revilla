@@ -12,7 +12,7 @@
       background: linear-gradient(135deg, #074fca, #dbe9f4);
       color: #333;
       perspective: 1000px;
-      transform-style: preserve-3d;
+      transform-style: flat; /* Cambio a flat para evitar renderizado 3D innecesario */
       will-change: transform;
     }
 
@@ -34,7 +34,7 @@
     }
 
     .left-column, .right-column {
-      transform: translateZ(0);
+      transform: translate3d(0, 0, 0); /* Usar translate3d para mejorar el rendimiento */
       backface-visibility: hidden;
     }
 
@@ -45,7 +45,7 @@
       padding: 2rem;
       box-sizing: border-box;
       box-shadow: inset -5px 0 10px rgba(0,0,0,0.2);
-      transform: translateZ(20px);
+      transform: translate3d(20px, 0, 0); /* Usar translate3d para una mejor calidad */
     }
 
     .right-column {
@@ -53,7 +53,7 @@
       padding: 2rem;
       box-sizing: border-box;
       background-color: #f3fbfd;
-      transform: translateZ(10px);
+      transform: translate3d(10px, 0, 0);
     }
 
     h1 {
@@ -86,7 +86,7 @@
 
     .skill-bar {
       margin-bottom: 1rem;
-      transform: translateZ(5px);
+      transform: translate3d(0, 0, 0);
     }
 
     .skill-name {
@@ -247,4 +247,23 @@
 
     <h2>📁 Proyectos Relevantes</h2>
     <ul>
-      <li><strong>Desarrollo Web – Empresa
+      <li><strong>Desarrollo Web – Empresa Familiar:</strong> Página web creada en Visual Studio Code</li>
+      <li><strong>Bot de WhatsApp – Ikosoft:</strong> Recordatorios automáticos de citas</li>
+      <li>Integración con SQL y servidor en <strong>GoDaddy</strong></li>
+    </ul>
+
+    <h2>🎓 Educación</h2>
+    <ul>
+      <li><strong>Grado Medio en Sistemas Microinformáticos y Redes</strong> (Presencial, 2020–2022) – Media: <strong>8,7</strong></li>
+      <li><strong>Curso de Hostelería y Turismo</strong> – Audiolís (Online, 2014)</li>
+      <li><strong>Educación Secundaria Obligatoria (ESO)</strong></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Víctor Revilla Ramírez – CV Web Personal
+</footer>
+
+</body>
+</html>
