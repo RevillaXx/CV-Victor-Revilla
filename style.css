@@ -1,0 +1,373 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #074fca, #dbe9f4);
+  color: #333;
+  perspective: 1000px;
+}
+
+
+.intro {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(120deg, #2980b9, #6dd5fa);
+  color: white;
+  text-align: center;
+}
+
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+
+#verCV {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #ffffff;
+  color: #2980b9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#verCV:hover {
+  background-color: #ddd;
+}
+
+.cv {
+  transition: opacity 1s ease, transform 1s ease;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #074fca, #dbe9f4);
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+  perspective: 1000px;
+}
+
+
+.cv h2, .cv h3 {
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 0.5rem;
+}
+
+.habilidad {
+  margin-bottom: 1rem;
+}
+
+.barra {
+  background: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.nivel {
+  height: 100%;
+  background: #000407;
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+.experiencia {
+  background: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 35px #070707;
+  overflow: hidden;
+  box-shadow: 0 70px 140px rgba(0,0,0,0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.container:hover {
+  transform: rotateY(0deg) rotateX(0deg); 
+}
+
+.left-column, .right-column {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.left-column {
+  width: 30%;
+  background: linear-gradient(135deg, #005577, #007799);
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.right-column {
+  width: 70%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #f3fbfd;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #011f2e;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.4rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+p, li {
+  line-height: 1.5;
+}
+
+p strong, li strong {
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.barrahabilidades {
+  margin-bottom: 1rem;
+}
+
+.habilidades {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.bar {
+  height: 12px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+.bar2 {
+  height: 100%;
+  background: #ffffff;
+  opacity: 0.8;
+  transition: width 0.3s ease;
+}
+
+
+
+#scrollTopBtn {
+  position: fixed; /* Fijo para que esté siempre visible */
+  right: 20px;
+  top: 50%; /* Centrado vertical */
+  transform: translateY(-50%); /* Alineación precisa */
+  z-index: 1000;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  display: none; /* Inicialmente oculto */
+}
+
+#scrollTopBtn:hover {
+  background-color: #1f6391;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #074fca, #dbe9f4);
+  color: #333;
+  scroll-behavior: smooth;
+  perspective: 1000px;
+}
+
+.intro {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(120deg, #2980b9, #6dd5fa);
+  color: white;
+  text-align: center;
+}
+
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+#verCV {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #080606;
+  color: #2980b9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#verCV:hover {
+  background-color: #0e0a0a;
+}
+
+.cv {
+  margin: 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #074fca, #dbe9f4);
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  perspective: 1000px;
+}
+
+.cv h2, .cv h3 {
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 0.5rem;
+}
+
+.barra {
+  background: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.bar2 {
+  height: 100%;
+  background: #00060a;
+}
+
+.barrahabilidades {
+  margin-bottom: 1rem;
+}
+
+.habilidades {
+  margin-bottom: 0.3rem;
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* RGB animado para el h1 */
+.rgb-title {
+  font-size: 4rem;
+  font-weight: bold;
+  animation: rgbGlow 3s infinite alternate;
+}
+
+@keyframes rgbAnimation {
+  0% {
+    color: #333333; /* Gris oscuro */
+  }
+  50% {
+    color: #555555; /* Gris medio */
+  }
+  100% {
+    color: #333333; /* Gris oscuro */
+  }
+}
+
+
+.rgbAnimation {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  animation: rgbAnimation 6s ease-in-out infinite; /* Transición suave */
+}
+
+
+
+/* Deslizamiento desde arriba */
+.intro-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.intro-content p {
+  display: block;
+  margin: 0 auto;
+  max-width: 60ch;
+  font-size: 1.4rem;
+  white-space: pre-wrap; /* Para respetar los saltos de línea */
+  visibility: hidden;
+}
+
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto máquina de escribir */
+.typing {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 6s steps(150, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+

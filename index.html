@@ -1,208 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!--Analytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-76P8RWVGYJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-76P8RWVGYJ');
-</script>
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Víctor Revilla Ramírez</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #074fca, #dbe9f4);
-      color: #333;
-      perspective: 1000px;
-    }
-
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 2rem auto;
-      background-color: #ffffff;
-      border-radius: 35px #070707;
-      overflow: hidden;
-      box-shadow: 0 70px 140px rgba(0,0,0,0.2);
-      transform-style: preserve-3d;
-      transition: transform 0.5s ease;
-    }
-
-    .container:hover {
-      transform: rotateY(0deg) rotateX(0deg); 
-    }
-
-    .left-column, .right-column {
-      backface-visibility: hidden;
-      transform: translateZ(0);
-    }
-
-    .left-column {
-      width: 30%;
-      background: linear-gradient(135deg, #005577, #007799);
-      color: white;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-
-    .right-column {
-      width: 70%;
-      padding: 2rem;
-      box-sizing: border-box;
-      background-color: #f3fbfd;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 2rem;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      color: #011f2e;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.4rem;
-      margin-top: 1.5rem;
-      font-weight: bold;
-    }
-
-    p, li {
-      line-height: 1.5;
-    }
-
-    p strong, li strong {
-      font-weight: bold;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .barrahabilidades {
-      margin-bottom: 1rem;
-    }
-
-    .habilidades {
-      font-weight: bold;
-      font-size: 0.95rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .bar {
-      height: 12px;
-      background: rgba(255,255,255,0.3);
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-    }
-
-    .bar2 {
-      height: 100%;
-      background: #ffffff;
-      opacity: 0.8;
-      transition: width 0.3s ease;
-    }
-
-    .experiencia {
-      background: #ffffff;
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .experiencia:hover {
-      transform: translateY(-5px) scale(1.01);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 2rem;
-    }
-
-    @media screen and (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .left-column, .right-column {
-        width: 100%;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV de Víctor - Técnico en Sistemas Microinformáticos y Redes" />
+  <title>Currículum de Víctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-76P8RWVGYJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-76P8RWVGYJ');
+  </script>
 </head>
 <body>
+  <section id="intro" class="intro">
+    <div class="intro-content">
+      <h1 class="rgbAnimation">Hola<br>Soy Víctor Revilla Ramirez</h1>
+      <p id="typewriter">Soy técnico informático con una trayectoria enfocada en soporte IT. <br>
+         Administración de bases de datos SQL y mejora de procesos.<br>
+        He coordinado equipos técnicos y resuelto incidencias de alta complejidad, aportando soluciones prácticas y eficientes.<br> 
+        Mi experiencia abarca desde la virtualización hasta el scripting, pasando por la automatización y la seguridad informática básica.<br> 
+        Me apasiona la tecnología, aprendo de forma constante y siempre busco formas de hacer más con menos asi como automatizando, optimizar procesos, simplificar  y mejorar.<br> 
+        Mi objetivo es convertir desafíos técnicos en soluciones reales que aporten valor a las empresas y sus usuarios.</p>
+      <button id="verCV">Ver mi CV</button>
+    </div>
+  </section>
+ 
 
-<div class="container">
-  <div class="left-column">
-    <h1>Víctor Revilla Ramírez</h1>
-    <p><strong>Líder de Técnicos en Software de Gestión de Bases de Datos</strong></p>
+  
+  <section id="cv" class="cv oculto">
 
-    <h2>📫 Contacto</h2>
-    <p><strong>Ubicación:</strong> Getafe, Madrid</p>
-    <p><strong>Email:</strong> victor.revilla2020@gmail.com</p>
+    <div class="container">
+      <div class="left-column">
+        <h1>Víctor Revilla Ramírez</h1>
+        <p><strong>Técnico en Soluciones IT, Administración de Bases de Datos y Soporte de Infraestructura</strong></p>
+    
+        <h2>📫 Contacto</h2>
+        <p><strong>Ubicación:</strong> Getafe, Madrid</p>
+        <p><strong>Email:</strong> victor.revilla2020@gmail.com</p>
+    
+        <h2>🛠️ Habilidades</h2>
+        <div class="barrahabilidades"><div class="habilidades">Soporte técnico y reparación</div><div class="bar"><div class="bar2" style="width: 85%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">Gestión de equipos</div><div class="bar"><div class="bar2" style="width: 85%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">Atención al cliente</div><div class="bar"><div class="bar2" style="width: 90%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">SQL</div><div class="bar"><div class="bar2" style="width: 90%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">Desarrollo web</div><div class="bar"><div class="bar2" style="width: 80%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">Automatización con bots y APIs</div><div class="bar"><div class="bar2" style="width: 75%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">HTML</div><div class="bar"><div class="bar2" style="width: 90%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">CSS</div><div class="bar"><div class="bar2" style="width: 80%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">Administración de redes informáticas</div><div class="bar"><div class="bar2" style="width: 80%"></div></div></div>
+        <div class="barrahabilidades"><div class="habilidades">Excel</div><div class="bar"><div class="bar2" style="width: 75%"></div></div></div>
+    
+        <h2>🌍 Idiomas</h2>
+        <p><strong>Español:</strong> Nativo</p>
+        <p><strong>Inglés:</strong> Intermedio</p>
+    
+        <h2>🚘 Carnet de Conducir</h2>
+        <p>Carnet de conducir y vehículo propio</p>
+    
+        <h2>🎯 Actividades</h2>
+        <ul>
+          <li>Publicidad activa en <strong>Milanuncios</strong></li>
+          <li>Diagnóstico y reparación de ordenadores</li>
+          <li>Diagnóstico y reparación de impresoras</li>
+          <li>Mantenimiento y configuración de redes domésticas</li>
+        </ul>
+      </div>
+    
+      <div class="right-column">
+        <h2>👨‍💻 Sobre Mí</h2>
+    <p>Técnico informático con sólida experiencia en soporte IT, administración de bases de datos SQL y desarrollo de soluciones
+      tecnológicas orientadas a la
+      eficiencia operativa. He liderado
+      equipos técnicos, gestionado
+      incidencias complejas, y
+      participado en proyectos de
+      migración a la nube y
+      automatización de procesos. Con
+      conocimientos en virtualización,
+      scripting y seguridad básica,
+      destaco por mi capacidad para
+      traducir necesidades técnicas en
+      soluciones funcionales.
+      Apasionado por la tecnología,
+      autodidacta y con iniciativa para
+      implementar mejoras que
+      optimicen la experiencia del
+      usuario y los recursos de la
+      empresa.</p>
 
-    <h2>🛠️ Habilidades</h2>
-    <div class="barrahabilidades"><div class="habilidades">Soporte técnico y reparación</div><div class="bar"><div class="bar2" style="width: 85%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">Gestión de equipos</div><div class="bar"><div class="bar2" style="width: 85%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">Atención al cliente</div><div class="bar"><div class="bar2" style="width: 90%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">SQL</div><div class="bar"><div class="bar2" style="width: 90%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">Desarrollo web</div><div class="bar"><div class="bar2" style="width: 80%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">Automatización con bots y APIs</div><div class="bar"><div class="bar2" style="width: 75%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">HTML</div><div class="bar"><div class="bar2" style="width: 90%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">CSS</div><div class="bar"><div class="bar2" style="width: 80%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">Administración de redes informáticas</div><div class="bar"><div class="bar2" style="width: 80%"></div></div></div>
-    <div class="barrahabilidades"><div class="habilidades">Excel</div><div class="bar"><div class="bar2" style="width: 75%"></div></div></div>
-
-    <h2>🌍 Idiomas</h2>
-    <p><strong>Español:</strong> Nativo</p>
-    <p><strong>Inglés:</strong> Intermedio</p>
-
-    <h2>🚘 Carnet de Conducir</h2>
-    <p>Carnet de conducir y vehículo propio</p>
-
-    <h2>🎯 Actividades</h2>
-    <ul>
-      <li>Publicidad activa en <strong>Milanuncios</strong></li>
-      <li>Diagnóstico y reparación de ordenadores</li>
-      <li>Diagnóstico y reparación de impresoras</li>
-      <li>Mantenimiento y configuración de redes domésticas</li>
-    </ul>
-  </div>
-
-  <div class="right-column">
-    <h2>👨‍💻 Sobre Mí</h2>
-<p>Técnico informático con sólida experiencia en soporte IT, administración de bases de datos SQL y desarrollo de soluciones
-  tecnológicas orientadas a la
-  eficiencia operativa. He liderado
-  equipos técnicos, gestionado
-  incidencias complejas, y
-  participado en proyectos de
-  migración a la nube y
-  automatización de procesos. Con
-  conocimientos en virtualización,
-  scripting y seguridad básica,
-  destaco por mi capacidad para
-  traducir necesidades técnicas en
-  soluciones funcionales.
-  Apasionado por la tecnología,
-  autodidacta y con iniciativa para
-  implementar mejoras que
-  optimicen la experiencia del
-  usuario y los recursos de la
-  empresa.</p>
     <h2>💼 Experiencia Laboral</h2>
 
     <div class="experiencia">
@@ -230,72 +120,64 @@
         <li> Miembro de equipo técnico enfocado en soporte e implementación de soluciones IT.</li>
         <li> Optimización de consultas y procesos SQL mediante software de gestión de bases de datos propio de la empresa, incluyendo análisis de rendimiento y ajuste de índices.</li>
         <li> Comunicación directa con clientes y grandes empresas para implementación de mejoras funcionales y técnicas.</li>
+        <li> Coordinación y resolución de incidencias en contacto directo con la sede en Francia mediante Microsoft Teams.</li>
         <li> Soporte técnico remoto a usuarios mediante herramientas como AnyDesk, TeamViewer y conexión por RDP.</li>
         <li> Administración de máquinas virtuales para entornos de pruebas y producción (VirtualBox, VMware).</li>
+        <li> Participación en migraciones de servicios locales a entornos en la nube, asegurando la continuidad operativa y la integridad de datos.</li>
+        <li> Seguridad básica de sistemas: Aplicación de medidas de control de accesos, backups y protección frente a amenazas comunes.</li>
+        <li> Automatización y scripting básico: Uso de PowerShell y scripts por lotes para tareas repetitivas y soporte técnico.</li>
         <li> Documentación de procesos técnicos y procedimientos internos para estandarizar intervenciones del equipo.</li>
         <li> Gestión de incidencias y seguimiento mediante sistemas de ticketing.</li>
         <li> Supervisión del cumplimiento de buenas prácticas en seguridad informática y backups automáticos.</li>
+        <li> Comunicación con equipos técnicos y no técnicos: Capacidad para traducir necesidades técnicas a lenguaje comprensible para usuarios finales o áreas de negocio.</li>
       </ul>
     </div>
 
     <div class="experiencia">
       <p><strong>Amazon</strong><br><strong>Encargado de Rutas</strong> (2019 - 2021)</p>
       <ul>
-        <li>Planificación y control de rutas</li>
-        <li>Coordinación de repartidores</li>
+        <li> Planificación y control de rutas</li>
+        <li> Coordinación de repartidores</li>
       </ul>
     </div>
 
     <div class="experiencia">
       <p><strong>Amazon</strong><br><strong>Repartidor</strong> (2018 - 2019)</p>
       <ul>
-        <li>Entrega de pedidos</li>
-        <li>Trato profesional con cliente final</li>
+        <li> Entrega de pedidos</li>
+        <li> Trato profesional con cliente final</li>
       </ul>
     </div>
 
     <div class="experiencia">
       <p><strong>Restaurante Cratera</strong><br><strong>Camarero</strong> (2014 - 2021)</p>
       <ul>
-        <li>Servicio en sala y caja</li>
-        <li>Gestión en temporadas altas</li>
+        <li> Servicio en sala y caja</li>
+        <li> Gestión en temporadas altas</li>
       </ul>
     </div>
 
     <div class="experiencia">
       <p><strong>Supermercado DIA</strong><br><strong>Dependiente</strong> (2012 - 2014)</p>
       <ul>
-        <li>Reposición, caja y atención al cliente</li>
+        <li> Reposición, caja y atención al cliente</li>
       </ul>
     </div>
 
     <div class="experiencia">
       <p><strong>Autónomo en Construcción</strong><br><strong>Trabajador de Obra</strong> (2009 - 2012)</p>
       <ul>
-        <li>Instalación de escayola y techos</li>
-        <li>Reformas y obra nueva</li>
+        <li> Instalación de escayola y techos</li>
+        <li> Reformas y obra nueva</li>
       </ul>
     </div>
-
-    <h2>📁 Proyectos Relevantes</h2>
-    <ul>
-      <li><strong>Desarrollo Web – Empresa Familiar:</strong> Página web creada en Visual Studio Code</li>
-      <li><strong>Bot de WhatsApp – Ikosoft:</strong> Recordatorios automáticos de citas</li>
-      <li>Integración con SQL y servidor en <strong>GoDaddy</strong></li>
-    </ul>
-
-    <h2>🎓 Educación</h2>
-    <ul>
-      <li><strong>Grado Medio en Sistemas Microinformáticos y Redes</strong> (Presencial, 2020–2022) – Media: <strong>8,7</strong></li>
-      <li><strong>Curso de Hostelería y Turismo</strong> – Audiolís (Online, 2014)</li>
-      <li><strong>Educación Secundaria Obligatoria (ESO)</strong></li>
-    </ul>
-  </div>
-</div>
-
-<footer>
-  &copy; 2025 Víctor Revilla Ramírez – CV Web Personal
-</footer>
-
+ 
+  </section>
+  <button id="viewCVBtn">Ver CV</button>
+  <button id="scrollTopBtn" style="display: none;">↑</button>
+ 
+  
+  <script src="scripthtml.js"></script>
 </body>
 </html>
+
